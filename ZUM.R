@@ -1,5 +1,5 @@
-path ='C:\\Users\\ja\\Documents\\elkaPW\\ZUM2\\';
-data <- read.csv(paste(path,"train.csv",sep=''), sep=",")
+#path ='C:\\Users\\ja\\Documents\\elkaPW\\ZUM2\\';
+data <- read.csv(paste("data\\train.csv",sep=''), sep=",")
 
 summary(data)
 print(colnames(data))
