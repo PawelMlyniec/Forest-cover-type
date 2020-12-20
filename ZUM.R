@@ -1,48 +1,41 @@
-#path ='C:\\Users\\ja\\Documents\\elkaPW\\ZUM2\\';
+# Load data
 data <- read.csv(paste("data\\train.csv",sep=''), sep=",")
-
-summary(data)
-print(colnames(data))
-data <- data[,-1]
-summary(data)
-
-#PCA
-  #install.packages("factoextra")
-  library(factoextra)
-  data.pca <- prcomp(data, center=TRUE)
-  fviz_eig(data.pca)
-  summary(data.pca)
-
-  ## Get data
-  #TODO get PCA values
-  pca.var <- get_pca_var(data.pca)
-  summary(pca.var)
-
 
 #MOdels
 library(caret)
 require(caTools)
 set.seed(101) 
-feature_variance <- caret::nearZeroVar(data, saveMetrics = TRUE)
-
-x <- data[, -29]
-x <- x[, -21]
-
-sample = sample.split(x$Cover_Type, SplitRatio = .75)
-x_train = subset(x, sample == TRUE)
-x_val  = subset(x, sample == FALSE)
+#feature_variance <- caret::nearZeroVar(data, saveMetrics = TRUE)
 
 
-method = 'pcar'
-method = c('naive_bayes','kknn', 'C50' )
-levels(x_train[,-55])
-levels(x_train$Cover_Type)
-train.control <- trainControl(method="cv", number=10, classProbs= TRUE, summaryFunction = multiClassSummary)
+# Data pre-processing
+X <- data[, -29]
+x <- X[, -21]
+
+sample = sample.split(X$Cover_Type, SplitRatio = .75)
+X_train = subset(x, sample == TRUE)
+X_val  = subset(x, sample == FALSE)
+
+y_train = make.names(as.character(X_train$Cover_Type))
+X_train = X_train[, -55]
+
+y_val = make.names(as.character(X_val$Cover_Type))
+X_val = X_val[, -55]
+
+train_control <- trainControl(method="cv", number=10, classProbs= TRUE, summaryFunction = multiClassSummary)
 metric <- "logLoss"
 
-y_train <-  make.names(as.character(x_train$Cover_Type))
-m_kknn <- train(x_train[,-55], y_train, method="kknn", metric=metric, preProcess = "pca", 
-                trControl=train.control )
+# Naive Bayes
+m_nb <- train(X_train, y_train, method="naive_bayes", metric=metric, preProcess = "pca", 
+                trControl=train_control )
+print(m_nb)
 
-
+# K Nearest Neighbours
+m_kknn <- train(X_train, y_train, method="kknn", metric=metric, preProcess = "pca", 
+              trControl=train_control )
 print(m_kknn)
+
+# C5.0 Tree
+m_c50 <- train(X_train, y_train, method="c5.0", metric=metric, preProcess = "pca", 
+              trControl=train_control )
+print(m_c50)
