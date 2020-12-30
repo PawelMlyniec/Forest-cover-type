@@ -1,6 +1,75 @@
 # Load data
 data <- read.csv(paste("data\\train.csv",sep=''), sep=",")
 
+#summary
+summary(data)
+
+#delete ID column
+data <- data[,2:56]
+
+#set Cover_tye as categorical
+data$Cover_Type <- as.factor(data$Cover_Type)
+
+#class balance
+table(data$Cover_Type)
+
+# calculate skewness
+#install.packages("moments")
+library(moments)
+skewness(data) #problem with soil_type 8, 25 or 7 and 15
+
+#corellation between arguments
+library(reshape2)
+library(ggplot2)
+
+cormat <- round(cor(data[,1:10]),2)
+
+## Get upper triangle of the correlation matrix
+get_upper_tri <- function(cormat){
+  cormat[lower.tri(cormat)]<- NA
+  return(cormat)
+}
+
+upper_tri  <- get_upper_tri(cormat)
+
+melted_cormat <- melt(upper_tri , na.rm = TRUE)
+
+ggheatmap <- ggplot(melted_cormat, aes(Var2, Var1, fill = value))+
+  geom_tile(color = "white")+
+  scale_fill_gradient2(low = "blue", high = "red", mid = "white", 
+                       midpoint = 0, limit = c(-1,1), space = "Lab", 
+                       name="Correlation") +
+  theme_minimal()+ # minimal theme
+  theme(axis.text.x = element_text(angle = 45, vjust = 1, 
+                                   size = 12, hjust = 1))+
+  coord_fixed()
+
+ggheatmap + 
+  geom_text(aes(Var2, Var1, label = value), color = "black", size = 4) +
+  theme(
+    axis.title.x = element_blank(),
+    axis.title.y = element_blank(),
+    panel.grid.major = element_blank(),
+    panel.border = element_blank(),
+    panel.background = element_blank(),
+    axis.ticks = element_blank(),
+    legend.justification = c(1, 0),
+    legend.position = c(0.6, 0.7),
+    legend.direction = "horizontal")+
+  guides(fill = guide_colorbar(barwidth = 7, barheight = 1,
+                               title.position = "top", title.hjust = 0.5))
+
+#Box plot
+for (column in 1:54){
+  boxplot(data[,column]~Cover_Type,
+          data=data,
+          main=paste("Boxplot for", names(data)[column],  "against Cover Type"),
+          xlab="Cover Type",
+          ylab=names(data)[column],
+          col="orange",
+          border="brown"
+  )
+}
 #MOdels
 library(caret)
 require(caTools)
@@ -8,7 +77,17 @@ set.seed(101)
 #feature_variance <- caret::nearZeroVar(data, saveMetrics = TRUE)
 
 
-# Data pre-processing
+# Data pre-processing V1
+data$Cover_Type <- as.factor(data$Cover_Type)
+
+#create train and validation set
+sample = sample.split(data$Cover_Type, SplitRatio = .75)
+X_train = subset(data, sample == TRUE)
+X_val  = subset(data, sample == FALSE)
+
+ #no class inbalance
+
+#Data pre-porcessing V2
 X <- data[, -29]
 x <- X[, -21]
 
