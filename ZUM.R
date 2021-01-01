@@ -7,7 +7,7 @@ summary(data)
 #delete ID column
 data <- data[,2:56]
 
-#set Cover_tye as categorical
+#set Cover_type as categorical
 data$Cover_Type <- as.factor(data$Cover_Type)
 
 #class balance
@@ -73,6 +73,7 @@ for (column in 1:54){
 #MOdels
 library(caret)
 require(caTools)
+library(mlbench)
 set.seed(101) 
 #feature_variance <- caret::nearZeroVar(data, saveMetrics = TRUE)
 
@@ -85,36 +86,110 @@ sample = sample.split(data$Cover_Type, SplitRatio = .75)
 X_train = subset(data, sample == TRUE)
 X_val  = subset(data, sample == FALSE)
 
- #no class inbalance
+ #no class imbalance
+table(X_train$Cover_Type)
+table(X_val$Cover_Type)
 
 #Data pre-porcessing V2
 X <- data[, -29]
-x <- X[, -21]
+X <- X[, -21]
 
 sample = sample.split(X$Cover_Type, SplitRatio = .75)
-X_train = subset(x, sample == TRUE)
-X_val  = subset(x, sample == FALSE)
+X_train = subset(X, sample == TRUE)
+X_val  = subset(X, sample == FALSE)
+
+table(X_train$Cover_Type)
+table(X_val$Cover_Type)
 
 y_train = make.names(as.character(X_train$Cover_Type))
-X_train = X_train[, -55]
+X_train = X_train[, -53]
 
 y_val = make.names(as.character(X_val$Cover_Type))
-X_val = X_val[, -55]
+X_val = X_val[, -53]
+y_val = as.factor(y_val)
 
-train_control <- trainControl(method="cv", number=10, classProbs= TRUE, summaryFunction = multiClassSummary)
+train_control <- trainControl(method="repeatedcv", number=20, repeats=10, classProbs= TRUE, summaryFunction = multiClassSummary)
 metric <- "logLoss"
 
+
+filename = paste("train_log_", toString(Sys.time()), ".txt", sep="")
+my_log = file("train_log_n20_r10_center_scale.txt")
+sink(my_log, append=TRUE, type="output")
+sink(my_log, append=TRUE, type="message")
+
 # Naive Bayes
-m_nb <- train(X_train, y_train, method="naive_bayes", metric=metric, preProcess = "pca", 
+start_time = Sys.time()
+m_nb <- train(X_train, y_train, method="naive_bayes", metric=metric, preProcess=c("center", "scale"), 
                 trControl=train_control )
+end_time = Sys.time()
+print("Elapsed training time:")
+print(end_time - start_time)
 print(m_nb)
+pred_nb <- predict(m_nb, newdata=X_val)
+end_time = Sys.time()
+print("Elapsed predict time:")
+print(end_time - start_time)
+confusionMatrix(data=pred_nb, reference=y_val)
 
 # K Nearest Neighbours
-m_kknn <- train(X_train, y_train, method="kknn", metric=metric, preProcess = "pca", 
+start_time = Sys.time()
+m_kknn <- train(X_train, y_train, method="kknn", metric=metric, preProcess=c("center", "scale"), 
               trControl=train_control )
+end_time = Sys.time()
+print("Elapsed training time:")
+print(end_time - start_time)
 print(m_kknn)
+start_time = Sys.time()
+pred_kknn = predict(m_kknn, newdata=X_val)
+end_time = Sys.time()
+print("Elapsed predict time:")
+print(end_time - start_time)
+confusionMatrix(data=pred_kknn, reference=y_val)
 
 # C5.0 Tree
-m_c50 <- train(X_train, y_train, method="c5.0", metric=metric, preProcess = "pca", 
+start_time = Sys.time()
+m_c50 <- train(X_train, y_train, method="C5.0Tree", metric=metric, preProcess=c("center", "scale"), 
               trControl=train_control )
+end_time = Sys.time()
+print("Elapsed training time:")
+print(end_time - start_time)
 print(m_c50)
+start_time = Sys.time()
+pred_c50 = predict(m_c50, newdata=X_val)
+end_time = Sys.time()
+print("Elapsed predict time:")
+print(end_time - start_time)
+confusionMatrix(data=pred_c50, reference=y_val)
+
+# Conditional Inference Random Forest
+start_time = Sys.time()
+m_cforest <- train(X_train, y_train, method="cforest", metric=metric, preProcess=c("center", "scale"), 
+               trControl=train_control)
+end_time = Sys.time()
+print("Elapsed training time:")
+print(end_time - start_time)
+print(m_cforest)
+start_time = Sys.time()
+pred_cforest = predict(m_cforest, newdata=X_val)
+end_time = Sys.time()
+print("Elapsed predict time:")
+print(end_time - start_time)
+confusionMatrix(data=pred_cforest, reference=y_val)
+
+# eXtreme Gradient Boosting
+start_time = Sys.time()
+m_xgbtree <- train(X_train, y_train, method="xgbTree", metric=metric, preProcess=c("center", "scale"), 
+               trControl=train_control)
+end_time = Sys.time()
+print("Elapsed training time:")
+print(end_time - start_time)
+print(m_xgbtree)
+start_time = Sys.time()
+pred_xgbtree = predict(m_xgbtree, newdata=X_val)
+end_time = Sys.time()
+print("Elapsed predict time:")
+print(end_time - start_time)
+confusionMatrix(data=pred_xgbtree, reference=y_val)
+
+closeAllConnections()
+
