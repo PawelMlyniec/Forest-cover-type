@@ -131,6 +131,7 @@ data_del_lass <- dplyr::select(data,
                         "Soil_Type25",
                         "Soil_Type28",
                         "Soil_Type34"))
+
 #MOdels
 library(caret)
 require(caTools)
