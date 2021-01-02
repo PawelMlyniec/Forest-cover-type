@@ -83,7 +83,7 @@ data_lasso <- glmnet(
   )
 plot(data_lasso, xvar="lambda", label=TRUE)
 
-data.cv.lasso <- cv.glmnet(x = data_matrix, y=data[,55], alpha=1 )
+data_cv_lasso <- cv.glmnet(x = data_matrix, y=data[,55], alpha=1 )
 plot(data_cv_lasso)
 
 min(data_cv_lasso$cvm)
