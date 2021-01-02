@@ -70,6 +70,47 @@ for (column in 1:54){
           border="brown"
   )
 }
+
+#Lasso
+library(dplyr)
+library(broom)
+
+data_matrix <- as.matrix(data[,1:54])
+data_lasso <- glmnet(
+  x = data_matrix,
+  y=data[,55],
+  alpha=1
+  )
+plot(data_lasso, xvar="lambda", label=TRUE)
+
+data_cv_lasso <- cv.glmnet(x = data_matrix, y=data[,55], alpha=1 )
+plot(data_cv_lasso)
+
+min(data_cv_lasso$cvm)
+data_cv_lasso$lambda.min
+data_cv_lasso$cvm[data_cv_lasso$lambda == data_cv_lasso$lambda.1se]
+data_cv_lasso$lambda.1se
+
+data_lasso_min <- glmnet(
+  x = data_matrix,
+  y=data[,55],
+  alpha = 1
+)
+
+plot(data_lasso_min, xvar = "lambda")
+abline(v = log(data_cv_lasso$lambda.min), col = "red", lty = "dashed")
+abline(v = log(data_cv_lasso$lambda.1se), col = "red", lty = "dashed")
+
+coef(data_cv_lasso, s = "lambda.1se") %>%
+  tidy() %>%
+  filter(row != "(Intercept)") %>%
+  ggplot(aes(value, reorder(row, value), color = value > 0)) +
+  geom_point(show.legend = FALSE) +
+  ggtitle("Influential variables") +
+  xlab("Coefficient") +
+  ylab(NULL)
+
+
 #MOdels
 library(caret)
 require(caTools)
