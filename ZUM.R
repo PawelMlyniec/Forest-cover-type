@@ -110,6 +110,27 @@ coef(data_cv_lasso, s = "lambda.1se") %>%
   xlab("Coefficient") +
   ylab(NULL)
 
+coef(data_cv_lasso)
+
+data_del_lass <- dplyr::select(data, 
+                      -c(
+                        "Elevation",
+                        "Aspect",
+                        "Slope",
+                        "Hillshade_9am",
+                        "Wilderness_Area4",
+                        "Soil_Type1",
+                        "Soil_Type2",
+                        "Soil_Type6",
+                        "Soil_Type7",
+                        "Soil_Type8",
+                        "Soil_Type11",
+                        "Soil_Type14",
+                        "Soil_Type15",
+                        "Soil_Type16", 
+                        "Soil_Type25",
+                        "Soil_Type28",
+                        "Soil_Type34"))
 
 #MOdels
 library(caret)
