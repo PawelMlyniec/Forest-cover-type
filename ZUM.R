@@ -95,14 +95,16 @@ y_val = make.names(as.character(X_val$Cover_Type))
 X_val = X_val[, -53]
 y_val = as.factor(y_val)
 
+# Enable parallel processing
 library(doParallel)
 cl <- makePSOCKcluster(7)
 registerDoParallel(cl)
 
+# Setup train control
 train_control <- trainControl(method="repeatedcv", number=10, repeats=3, classProbs= TRUE, summaryFunction = multiClassSummary)
 metric <- "logLoss"
 
-
+# Setup text file logging
 my_log = file("train_log_n10_r3_center_scale_v1.txt")
 sink(my_log, append=TRUE, type="output")
 sink(my_log, append=TRUE, type="message")
@@ -166,21 +168,8 @@ print("Elapsed predict time:")
 print(end_time - start_time)
 confusionMatrix(data=pred_xgbtree, reference=y_val)
 
-# Conditional Inference Random Forest
-start_time = Sys.time()
-m_cforest <- train(X_train, y_train, method="cforest", metric=metric, preProcess=c("center", "scale"), 
-                   trControl=train_control)
-end_time = Sys.time()
-print("Elapsed training time:")
-print(end_time - start_time)
-print(m_cforest)
-start_time = Sys.time()
-pred_cforest = predict(m_cforest, newdata=X_val)
-end_time = Sys.time()
-print("Elapsed predict time:")
-print(end_time - start_time)
-confusionMatrix(data=pred_cforest, reference=y_val)
-
+# close file logger
 closeAllConnections()
+# stop parallel processing cluster
 stopCluster(cl)
 
