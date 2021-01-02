@@ -77,19 +77,6 @@ library(mlbench)
 set.seed(101) 
 #feature_variance <- caret::nearZeroVar(data, saveMetrics = TRUE)
 
-
-# Data pre-processing V1
-data$Cover_Type <- as.factor(data$Cover_Type)
-
-#create train and validation set
-sample = sample.split(data$Cover_Type, SplitRatio = .75)
-X_train = subset(data, sample == TRUE)
-X_val  = subset(data, sample == FALSE)
-
- #no class imbalance
-table(X_train$Cover_Type)
-table(X_val$Cover_Type)
-
 #Data pre-porcessing V2
 X <- data[, -29]
 X <- X[, -21]
@@ -108,12 +95,15 @@ y_val = make.names(as.character(X_val$Cover_Type))
 X_val = X_val[, -53]
 y_val = as.factor(y_val)
 
-train_control <- trainControl(method="repeatedcv", number=20, repeats=10, classProbs= TRUE, summaryFunction = multiClassSummary)
+library(doParallel)
+cl <- makePSOCKcluster(7)
+registerDoParallel(cl)
+
+train_control <- trainControl(method="repeatedcv", number=10, repeats=3, classProbs= TRUE, summaryFunction = multiClassSummary)
 metric <- "logLoss"
 
 
-filename = paste("train_log_", toString(Sys.time()), ".txt", sep="")
-my_log = file("train_log_n20_r10_center_scale.txt")
+my_log = file("train_log_n10_r3_center_scale_v1.txt")
 sink(my_log, append=TRUE, type="output")
 sink(my_log, append=TRUE, type="message")
 
@@ -161,21 +151,6 @@ print("Elapsed predict time:")
 print(end_time - start_time)
 confusionMatrix(data=pred_c50, reference=y_val)
 
-# Conditional Inference Random Forest
-start_time = Sys.time()
-m_cforest <- train(X_train, y_train, method="cforest", metric=metric, preProcess=c("center", "scale"), 
-               trControl=train_control)
-end_time = Sys.time()
-print("Elapsed training time:")
-print(end_time - start_time)
-print(m_cforest)
-start_time = Sys.time()
-pred_cforest = predict(m_cforest, newdata=X_val)
-end_time = Sys.time()
-print("Elapsed predict time:")
-print(end_time - start_time)
-confusionMatrix(data=pred_cforest, reference=y_val)
-
 # eXtreme Gradient Boosting
 start_time = Sys.time()
 m_xgbtree <- train(X_train, y_train, method="xgbTree", metric=metric, preProcess=c("center", "scale"), 
@@ -191,5 +166,21 @@ print("Elapsed predict time:")
 print(end_time - start_time)
 confusionMatrix(data=pred_xgbtree, reference=y_val)
 
+# Conditional Inference Random Forest
+start_time = Sys.time()
+m_cforest <- train(X_train, y_train, method="cforest", metric=metric, preProcess=c("center", "scale"), 
+                   trControl=train_control)
+end_time = Sys.time()
+print("Elapsed training time:")
+print(end_time - start_time)
+print(m_cforest)
+start_time = Sys.time()
+pred_cforest = predict(m_cforest, newdata=X_val)
+end_time = Sys.time()
+print("Elapsed predict time:")
+print(end_time - start_time)
+confusionMatrix(data=pred_cforest, reference=y_val)
+
 closeAllConnections()
+stopCluster(cl)
 
