@@ -1,0 +1,515 @@
+Warning in preProcess.default(thresh = 0.95, k = 5, freqCut = 19, uniqueCut = 10,  :
+  These variables have zero variances: Soil_Type25
+Warning in preProcess.default(thresh = 0.95, k = 5, freqCut = 19, uniqueCut = 10,  :
+  These variables have zero variances: Soil_Type25
+Warning in preProcess.default(thresh = 0.95, k = 5, freqCut = 19, uniqueCut = 10,  :
+  These variables have zero variances: Soil_Type8
+Warning in preProcess.default(thresh = 0.95, k = 5, freqCut = 19, uniqueCut = 10,  :
+  These variables have zero variances: Soil_Type8
+Warning in preProcess.default(thresh = 0.95, k = 5, freqCut = 19, uniqueCut = 10,  :
+  These variables have zero variances: Soil_Type25
+Warning in preProcess.default(thresh = 0.95, k = 5, freqCut = 19, uniqueCut = 10,  :
+  These variables have zero variances: Soil_Type25
+Warning in preProcess.default(thresh = 0.95, k = 5, freqCut = 19, uniqueCut = 10,  :
+  These variables have zero variances: Soil_Type8
+Warning in preProcess.default(thresh = 0.95, k = 5, freqCut = 19, uniqueCut = 10,  :
+  These variables have zero variances: Soil_Type8
+Warning in preProcess.default(thresh = 0.95, k = 5, freqCut = 19, uniqueCut = 10,  :
+  These variables have zero variances: Soil_Type8
+Warning in preProcess.default(thresh = 0.95, k = 5, freqCut = 19, uniqueCut = 10,  :
+  These variables have zero variances: Soil_Type8
+Warning in preProcess.default(thresh = 0.95, k = 5, freqCut = 19, uniqueCut = 10,  :
+  These variables have zero variances: Soil_Type25
+Warning in preProcess.default(thresh = 0.95, k = 5, freqCut = 19, uniqueCut = 10,  :
+  These variables have zero variances: Soil_Type25
+Warning in preProcess.default(thresh = 0.95, k = 5, freqCut = 19, uniqueCut = 10,  :
+  These variables have zero variances: Soil_Type8
+Warning in preProcess.default(thresh = 0.95, k = 5, freqCut = 19, uniqueCut = 10,  :
+  These variables have zero variances: Soil_Type8
+Warning in preProcess.default(thresh = 0.95, k = 5, freqCut = 19, uniqueCut = 10,  :
+  These variables have zero variances: Soil_Type25
+Warning in preProcess.default(thresh = 0.95, k = 5, freqCut = 19, uniqueCut = 10,  :
+  These variables have zero variances: Soil_Type25
+Warning in preProcess.default(thresh = 0.95, k = 5, freqCut = 19, uniqueCut = 10,  :
+  These variables have zero variances: Soil_Type25
+Warning in preProcess.default(thresh = 0.95, k = 5, freqCut = 19, uniqueCut = 10,  :
+  These variables have zero variances: Soil_Type25
+Warning in preProcess.default(thresh = 0.95, k = 5, freqCut = 19, uniqueCut = 10,  :
+  These variables have zero variances: Soil_Type8
+Warning in preProcess.default(thresh = 0.95, k = 5, freqCut = 19, uniqueCut = 10,  :
+  These variables have zero variances: Soil_Type8
+Warning in preProcess.default(thresh = 0.95, k = 5, freqCut = 19, uniqueCut = 10,  :
+  These variables have zero variances: Soil_Type8
+Warning in preProcess.default(thresh = 0.95, k = 5, freqCut = 19, uniqueCut = 10,  :
+  These variables have zero variances: Soil_Type8
+Warning in preProcess.default(thresh = 0.95, k = 5, freqCut = 19, uniqueCut = 10,  :
+  These variables have zero variances: Soil_Type25
+Warning in preProcess.default(thresh = 0.95, k = 5, freqCut = 19, uniqueCut = 10,  :
+  These variables have zero variances: Soil_Type25
+Warning in preProcess.default(thresh = 0.95, k = 5, freqCut = 19, uniqueCut = 10,  :
+  These variables have zero variances: Soil_Type8
+Warning in preProcess.default(thresh = 0.95, k = 5, freqCut = 19, uniqueCut = 10,  :
+  These variables have zero variances: Soil_Type8
+Warning in preProcess.default(thresh = 0.95, k = 5, freqCut = 19, uniqueCut = 10,  :
+  These variables have zero variances: Soil_Type25
+Warning in preProcess.default(thresh = 0.95, k = 5, freqCut = 19, uniqueCut = 10,  :
+  These variables have zero variances: Soil_Type25
+Warning in preProcess.default(thresh = 0.95, k = 5, freqCut = 19, uniqueCut = 10,  :
+  These variables have zero variances: Soil_Type8
+Warning in preProcess.default(thresh = 0.95, k = 5, freqCut = 19, uniqueCut = 10,  :
+  These variables have zero variances: Soil_Type8
+Warning in preProcess.default(thresh = 0.95, k = 5, freqCut = 19, uniqueCut = 10,  :
+  These variables have zero variances: Soil_Type25
+Warning in preProcess.default(thresh = 0.95, k = 5, freqCut = 19, uniqueCut = 10,  :
+  These variables have zero variances: Soil_Type25
+Warning in preProcess.default(thresh = 0.95, k = 5, freqCut = 19, uniqueCut = 10,  :
+  These variables have zero variances: Soil_Type8
+Warning in preProcess.default(thresh = 0.95, k = 5, freqCut = 19, uniqueCut = 10,  :
+  These variables have zero variances: Soil_Type8
+Warning in preProcess.default(thresh = 0.95, k = 5, freqCut = 19, uniqueCut = 10,  :
+  These variables have zero variances: Soil_Type25
+Warning in preProcess.default(thresh = 0.95, k = 5, freqCut = 19, uniqueCut = 10,  :
+  These variables have zero variances: Soil_Type25
+Warning in preProcess.default(thresh = 0.95, k = 5, freqCut = 19, uniqueCut = 10,  :
+  These variables have zero variances: Soil_Type25
+Warning in preProcess.default(thresh = 0.95, k = 5, freqCut = 19, uniqueCut = 10,  :
+  These variables have zero variances: Soil_Type25
+Warning in preProcess.default(thresh = 0.95, k = 5, freqCut = 19, uniqueCut = 10,  :
+  These variables have zero variances: Soil_Type8
+Warning in preProcess.default(thresh = 0.95, k = 5, freqCut = 19, uniqueCut = 10,  :
+  These variables have zero variances: Soil_Type8
+Warning message:
+In nominalTrainWorkflow(x = x, y = y, wts = weights, info = trainInfo,  :
+  There were missing values in resampled performance measures.
+Naive Bayes 
+
+11340 samples
+   52 predictor
+    7 classes: 'X1', 'X2', 'X3', 'X4', 'X5', 'X6', 'X7' 
+
+Pre-processing: centered (52), scaled (52) 
+Resampling: Cross-Validated (20 fold, repeated 10 times) 
+Summary of sample sizes: 10773, 10773, 10773, 10773, 10773, 10773, ... 
+Resampling results across tuning parameters:
+
+  usekernel  logLoss   AUC        prAUC      Accuracy   Kappa      Mean_F1  Mean_Sensitivity  Mean_Specificity
+  FALSE      21.90965  0.7511651  0.3433204  0.2322399  0.1042798  NaN      0.2322399         0.8720400       
+   TRUE      10.43671  0.8284385  0.4794414  0.3157760  0.2017387  NaN      0.3157760         0.8859627       
+  Mean_Pos_Pred_Value  Mean_Neg_Pred_Value  Mean_Precision  Mean_Recall  Mean_Detection_Rate
+  NaN                  0.8759853            NaN             0.2322399    0.03317712         
+  NaN                  0.8947522            NaN             0.3157760    0.04511086         
+  Mean_Balanced_Accuracy
+  0.5521399             
+  0.6008693             
+
+Tuning parameter 'laplace' was held constant at a value of 0
+Tuning parameter 'adjust' was held constant at
+ a value of 1
+logLoss was used to select the optimal model using the smallest value.
+The final values used for the model were laplace = 0, usekernel = TRUE and adjust = 1.
+Confusion Matrix and Statistics
+
+          Reference
+Prediction  X1  X2  X3  X4  X5  X6  X7
+        X1  15  20   0   0   0   0   0
+        X2   0   0   0   0   0   0   0
+        X3 445 497 500  91 537 510 313
+        X4   0   1  40 449   0  30   0
+        X5   4   4   0   0   3   0   0
+        X6   0   0   0   0   0   0   0
+        X7  76  18   0   0   0   0 227
+
+Overall Statistics
+                                         
+               Accuracy : 0.3159         
+                 95% CI : (0.3011, 0.331)
+    No Information Rate : 0.1429         
+    P-Value [Acc > NIR] : < 2.2e-16      
+                                         
+                  Kappa : 0.2019         
+                                         
+ Mcnemar's Test P-Value : NA             
+
+Statistics by Class:
+
+                     Class: X1 Class: X2 Class: X3 Class: X4 Class: X5 Class: X6 Class: X7
+Sensitivity           0.027778    0.0000    0.9259    0.8315 0.0055556    0.0000   0.42037
+Specificity           0.993827    1.0000    0.2614    0.9781 0.9975309    1.0000   0.97099
+Pos Pred Value        0.428571       NaN    0.1728    0.8635 0.2727273       NaN   0.70717
+Neg Pred Value        0.859813    0.8571    0.9549    0.9721 0.8575219    0.8571   0.90951
+Prevalence            0.142857    0.1429    0.1429    0.1429 0.1428571    0.1429   0.14286
+Detection Rate        0.003968    0.0000    0.1323    0.1188 0.0007937    0.0000   0.06005
+Detection Prevalence  0.009259    0.0000    0.7653    0.1376 0.0029101    0.0000   0.08492
+Balanced Accuracy     0.510802    0.5000    0.5937    0.9048 0.5015432    0.5000   0.69568
+Warning in preProcess.default(thresh = 0.95, k = 5, freqCut = 19, uniqueCut = 10,  :
+  These variables have zero variances: Soil_Type8
+Warning in preProcess.default(thresh = 0.95, k = 5, freqCut = 19, uniqueCut = 10,  :
+  These variables have zero variances: Soil_Type8
+Warning in preProcess.default(thresh = 0.95, k = 5, freqCut = 19, uniqueCut = 10,  :
+  These variables have zero variances: Soil_Type8
+Warning in preProcess.default(thresh = 0.95, k = 5, freqCut = 19, uniqueCut = 10,  :
+  These variables have zero variances: Soil_Type25
+Warning in preProcess.default(thresh = 0.95, k = 5, freqCut = 19, uniqueCut = 10,  :
+  These variables have zero variances: Soil_Type25
+Warning in preProcess.default(thresh = 0.95, k = 5, freqCut = 19, uniqueCut = 10,  :
+  These variables have zero variances: Soil_Type25
+Warning in preProcess.default(thresh = 0.95, k = 5, freqCut = 19, uniqueCut = 10,  :
+  These variables have zero variances: Soil_Type25
+Warning in preProcess.default(thresh = 0.95, k = 5, freqCut = 19, uniqueCut = 10,  :
+  These variables have zero variances: Soil_Type25
+Warning in preProcess.default(thresh = 0.95, k = 5, freqCut = 19, uniqueCut = 10,  :
+  These variables have zero variances: Soil_Type25
+Warning in preProcess.default(thresh = 0.95, k = 5, freqCut = 19, uniqueCut = 10,  :
+  These variables have zero variances: Soil_Type8
+Warning in preProcess.default(thresh = 0.95, k = 5, freqCut = 19, uniqueCut = 10,  :
+  These variables have zero variances: Soil_Type8
+Warning in preProcess.default(thresh = 0.95, k = 5, freqCut = 19, uniqueCut = 10,  :
+  These variables have zero variances: Soil_Type8
+Warning in preProcess.default(thresh = 0.95, k = 5, freqCut = 19, uniqueCut = 10,  :
+  These variables have zero variances: Soil_Type8
+Warning in preProcess.default(thresh = 0.95, k = 5, freqCut = 19, uniqueCut = 10,  :
+  These variables have zero variances: Soil_Type8
+Warning in preProcess.default(thresh = 0.95, k = 5, freqCut = 19, uniqueCut = 10,  :
+  These variables have zero variances: Soil_Type8
+Warning in preProcess.default(thresh = 0.95, k = 5, freqCut = 19, uniqueCut = 10,  :
+  These variables have zero variances: Soil_Type25
+Warning in preProcess.default(thresh = 0.95, k = 5, freqCut = 19, uniqueCut = 10,  :
+  These variables have zero variances: Soil_Type25
+Warning in preProcess.default(thresh = 0.95, k = 5, freqCut = 19, uniqueCut = 10,  :
+  These variables have zero variances: Soil_Type25
+Warning in preProcess.default(thresh = 0.95, k = 5, freqCut = 19, uniqueCut = 10,  :
+  These variables have zero variances: Soil_Type8
+Warning in preProcess.default(thresh = 0.95, k = 5, freqCut = 19, uniqueCut = 10,  :
+  These variables have zero variances: Soil_Type8
+Warning in preProcess.default(thresh = 0.95, k = 5, freqCut = 19, uniqueCut = 10,  :
+  These variables have zero variances: Soil_Type8
+Warning in preProcess.default(thresh = 0.95, k = 5, freqCut = 19, uniqueCut = 10,  :
+  These variables have zero variances: Soil_Type25
+Warning in preProcess.default(thresh = 0.95, k = 5, freqCut = 19, uniqueCut = 10,  :
+  These variables have zero variances: Soil_Type25
+Warning in preProcess.default(thresh = 0.95, k = 5, freqCut = 19, uniqueCut = 10,  :
+  These variables have zero variances: Soil_Type25
+Warning in preProcess.default(thresh = 0.95, k = 5, freqCut = 19, uniqueCut = 10,  :
+  These variables have zero variances: Soil_Type25
+Warning in preProcess.default(thresh = 0.95, k = 5, freqCut = 19, uniqueCut = 10,  :
+  These variables have zero variances: Soil_Type25
+Warning in preProcess.default(thresh = 0.95, k = 5, freqCut = 19, uniqueCut = 10,  :
+  These variables have zero variances: Soil_Type25
+Warning in preProcess.default(thresh = 0.95, k = 5, freqCut = 19, uniqueCut = 10,  :
+  These variables have zero variances: Soil_Type8
+Warning in preProcess.default(thresh = 0.95, k = 5, freqCut = 19, uniqueCut = 10,  :
+  These variables have zero variances: Soil_Type8
+Warning in preProcess.default(thresh = 0.95, k = 5, freqCut = 19, uniqueCut = 10,  :
+  These variables have zero variances: Soil_Type8
+Warning in preProcess.default(thresh = 0.95, k = 5, freqCut = 19, uniqueCut = 10,  :
+  These variables have zero variances: Soil_Type8
+Warning in preProcess.default(thresh = 0.95, k = 5, freqCut = 19, uniqueCut = 10,  :
+  These variables have zero variances: Soil_Type8
+Warning in preProcess.default(thresh = 0.95, k = 5, freqCut = 19, uniqueCut = 10,  :
+  These variables have zero variances: Soil_Type8
+Warning in preProcess.default(thresh = 0.95, k = 5, freqCut = 19, uniqueCut = 10,  :
+  These variables have zero variances: Soil_Type25
+Warning in preProcess.default(thresh = 0.95, k = 5, freqCut = 19, uniqueCut = 10,  :
+  These variables have zero variances: Soil_Type25
+Warning in preProcess.default(thresh = 0.95, k = 5, freqCut = 19, uniqueCut = 10,  :
+  These variables have zero variances: Soil_Type25
+Warning in preProcess.default(thresh = 0.95, k = 5, freqCut = 19, uniqueCut = 10,  :
+  These variables have zero variances: Soil_Type8
+Warning in preProcess.default(thresh = 0.95, k = 5, freqCut = 19, uniqueCut = 10,  :
+  These variables have zero variances: Soil_Type8
+Warning in preProcess.default(thresh = 0.95, k = 5, freqCut = 19, uniqueCut = 10,  :
+  These variables have zero variances: Soil_Type8
+Warning in preProcess.default(thresh = 0.95, k = 5, freqCut = 19, uniqueCut = 10,  :
+  These variables have zero variances: Soil_Type25
+Warning in preProcess.default(thresh = 0.95, k = 5, freqCut = 19, uniqueCut = 10,  :
+  These variables have zero variances: Soil_Type25
+Warning in preProcess.default(thresh = 0.95, k = 5, freqCut = 19, uniqueCut = 10,  :
+  These variables have zero variances: Soil_Type25
+Warning in preProcess.default(thresh = 0.95, k = 5, freqCut = 19, uniqueCut = 10,  :
+  These variables have zero variances: Soil_Type8
+Warning in preProcess.default(thresh = 0.95, k = 5, freqCut = 19, uniqueCut = 10,  :
+  These variables have zero variances: Soil_Type8
+Warning in preProcess.default(thresh = 0.95, k = 5, freqCut = 19, uniqueCut = 10,  :
+  These variables have zero variances: Soil_Type8
+Warning in preProcess.default(thresh = 0.95, k = 5, freqCut = 19, uniqueCut = 10,  :
+  These variables have zero variances: Soil_Type25
+Warning in preProcess.default(thresh = 0.95, k = 5, freqCut = 19, uniqueCut = 10,  :
+  These variables have zero variances: Soil_Type25
+Warning in preProcess.default(thresh = 0.95, k = 5, freqCut = 19, uniqueCut = 10,  :
+  These variables have zero variances: Soil_Type25
+Warning in preProcess.default(thresh = 0.95, k = 5, freqCut = 19, uniqueCut = 10,  :
+  These variables have zero variances: Soil_Type8
+Warning in preProcess.default(thresh = 0.95, k = 5, freqCut = 19, uniqueCut = 10,  :
+  These variables have zero variances: Soil_Type8
+Warning in preProcess.default(thresh = 0.95, k = 5, freqCut = 19, uniqueCut = 10,  :
+  These variables have zero variances: Soil_Type8
+Warning in preProcess.default(thresh = 0.95, k = 5, freqCut = 19, uniqueCut = 10,  :
+  These variables have zero variances: Soil_Type25
+Warning in preProcess.default(thresh = 0.95, k = 5, freqCut = 19, uniqueCut = 10,  :
+  These variables have zero variances: Soil_Type25
+Warning in preProcess.default(thresh = 0.95, k = 5, freqCut = 19, uniqueCut = 10,  :
+  These variables have zero variances: Soil_Type25
+Warning in preProcess.default(thresh = 0.95, k = 5, freqCut = 19, uniqueCut = 10,  :
+  These variables have zero variances: Soil_Type25
+Warning in preProcess.default(thresh = 0.95, k = 5, freqCut = 19, uniqueCut = 10,  :
+  These variables have zero variances: Soil_Type25
+Warning in preProcess.default(thresh = 0.95, k = 5, freqCut = 19, uniqueCut = 10,  :
+  These variables have zero variances: Soil_Type25
+Warning in preProcess.default(thresh = 0.95, k = 5, freqCut = 19, uniqueCut = 10,  :
+  These variables have zero variances: Soil_Type8
+Warning in preProcess.default(thresh = 0.95, k = 5, freqCut = 19, uniqueCut = 10,  :
+  These variables have zero variances: Soil_Type8
+Warning in preProcess.default(thresh = 0.95, k = 5, freqCut = 19, uniqueCut = 10,  :
+  These variables have zero variances: Soil_Type8
+k-Nearest Neighbors 
+
+11340 samples
+   52 predictor
+    7 classes: 'X1', 'X2', 'X3', 'X4', 'X5', 'X6', 'X7' 
+
+Pre-processing: centered (52), scaled (52) 
+Resampling: Cross-Validated (20 fold, repeated 10 times) 
+Summary of sample sizes: 10773, 10773, 10773, 10773, 10773, 10773, ... 
+Resampling results across tuning parameters:
+
+  kmax  logLoss   AUC        prAUC      Accuracy   Kappa      Mean_F1    Mean_Sensitivity  Mean_Specificity
+  5     6.840444  0.8844702  0.0887498  0.8019489  0.7689403  0.7986574  0.8019489         0.9669915       
+  7     6.403881  0.8906762  0.1255525  0.8009083  0.7677263  0.7974843  0.8009083         0.9668180       
+  9     6.403881  0.8906762  0.1255525  0.8009083  0.7677263  0.7974843  0.8009083         0.9668180       
+  Mean_Pos_Pred_Value  Mean_Neg_Pred_Value  Mean_Precision  Mean_Recall  Mean_Detection_Rate
+  0.7996553            0.9672771            0.7996553       0.8019489    0.1145641          
+  0.7985160            0.9671147            0.7985160       0.8009083    0.1144155          
+  0.7985160            0.9671147            0.7985160       0.8009083    0.1144155          
+  Mean_Balanced_Accuracy
+  0.8844702             
+  0.8838632             
+  0.8838632             
+
+Tuning parameter 'distance' was held constant at a value of 2
+Tuning parameter 'kernel' was held constant at
+ a value of optimal
+logLoss was used to select the optimal model using the smallest value.
+The final values used for the model were kmax = 9, distance = 2 and kernel = optimal.
+Confusion Matrix and Statistics
+
+          Reference
+Prediction  X1  X2  X3  X4  X5  X6  X7
+        X1 376  89   0   0   5   1  19
+        X2 107 359  12   0  17  15   0
+        X3   1  11 389  14   6  75   0
+        X4   0   0  32 508   0  29   0
+        X5  23  55  18   0 509  10   1
+        X6   4  16  89  18   3 410   0
+        X7  29  10   0   0   0   0 520
+
+Overall Statistics
+                                          
+               Accuracy : 0.8124          
+                 95% CI : (0.7996, 0.8248)
+    No Information Rate : 0.1429          
+    P-Value [Acc > NIR] : < 2.2e-16       
+                                          
+                  Kappa : 0.7812          
+                                          
+ Mcnemar's Test P-Value : NA              
+
+Statistics by Class:
+
+                     Class: X1 Class: X2 Class: X3 Class: X4 Class: X5 Class: X6 Class: X7
+Sensitivity            0.69630   0.66481    0.7204    0.9407    0.9426    0.7593    0.9630
+Specificity            0.96481   0.95340    0.9670    0.9812    0.9670    0.9599    0.9880
+Pos Pred Value         0.76735   0.70392    0.7843    0.8928    0.8263    0.7593    0.9302
+Neg Pred Value         0.95015   0.94465    0.9540    0.9900    0.9902    0.9599    0.9938
+Prevalence             0.14286   0.14286    0.1429    0.1429    0.1429    0.1429    0.1429
+Detection Rate         0.09947   0.09497    0.1029    0.1344    0.1347    0.1085    0.1376
+Detection Prevalence   0.12963   0.13492    0.1312    0.1505    0.1630    0.1429    0.1479
+Balanced Accuracy      0.83056   0.80910    0.8437    0.9610    0.9548    0.8596    0.9755
+Warning in preProcess.default(thresh = 0.95, k = 5, freqCut = 19, uniqueCut = 10,  :
+  These variables have zero variances: Soil_Type25
+Warning in preProcess.default(thresh = 0.95, k = 5, freqCut = 19, uniqueCut = 10,  :
+  These variables have zero variances: Soil_Type8
+Warning in preProcess.default(thresh = 0.95, k = 5, freqCut = 19, uniqueCut = 10,  :
+  These variables have zero variances: Soil_Type8, Soil_Type25
+Warning in preProcess.default(thresh = 0.95, k = 5, freqCut = 19, uniqueCut = 10,  :
+  These variables have zero variances: Soil_Type8
+Warning in preProcess.default(thresh = 0.95, k = 5, freqCut = 19, uniqueCut = 10,  :
+  These variables have zero variances: Soil_Type25
+Warning in preProcess.default(thresh = 0.95, k = 5, freqCut = 19, uniqueCut = 10,  :
+  These variables have zero variances: Soil_Type25
+Warning in preProcess.default(thresh = 0.95, k = 5, freqCut = 19, uniqueCut = 10,  :
+  These variables have zero variances: Soil_Type8
+Warning in preProcess.default(thresh = 0.95, k = 5, freqCut = 19, uniqueCut = 10,  :
+  These variables have zero variances: Soil_Type8
+Warning in preProcess.default(thresh = 0.95, k = 5, freqCut = 19, uniqueCut = 10,  :
+  These variables have zero variances: Soil_Type25
+Warning in preProcess.default(thresh = 0.95, k = 5, freqCut = 19, uniqueCut = 10,  :
+  These variables have zero variances: Soil_Type25
+Warning in preProcess.default(thresh = 0.95, k = 5, freqCut = 19, uniqueCut = 10,  :
+  These variables have zero variances: Soil_Type8
+Warning in preProcess.default(thresh = 0.95, k = 5, freqCut = 19, uniqueCut = 10,  :
+  These variables have zero variances: Soil_Type8
+Warning in preProcess.default(thresh = 0.95, k = 5, freqCut = 19, uniqueCut = 10,  :
+  These variables have zero variances: Soil_Type25
+Warning in preProcess.default(thresh = 0.95, k = 5, freqCut = 19, uniqueCut = 10,  :
+  These variables have zero variances: Soil_Type8, Soil_Type25
+Warning in preProcess.default(thresh = 0.95, k = 5, freqCut = 19, uniqueCut = 10,  :
+  These variables have zero variances: Soil_Type25
+Warning in preProcess.default(thresh = 0.95, k = 5, freqCut = 19, uniqueCut = 10,  :
+  These variables have zero variances: Soil_Type8
+Warning in preProcess.default(thresh = 0.95, k = 5, freqCut = 19, uniqueCut = 10,  :
+  These variables have zero variances: Soil_Type25
+Warning in preProcess.default(thresh = 0.95, k = 5, freqCut = 19, uniqueCut = 10,  :
+  These variables have zero variances: Soil_Type8
+Single C5.0 Tree 
+
+11340 samples
+   52 predictor
+    7 classes: 'X1', 'X2', 'X3', 'X4', 'X5', 'X6', 'X7' 
+
+Pre-processing: centered (52), scaled (52) 
+Resampling: Cross-Validated (20 fold, repeated 10 times) 
+Summary of sample sizes: 10773, 10773, 10773, 10773, 10773, 10773, ... 
+Resampling results:
+
+  logLoss    AUC        prAUC      Accuracy  Kappa      Mean_F1    Mean_Sensitivity  Mean_Specificity
+  0.8107277  0.9398264  0.7204822  0.775485  0.7380658  0.7701805  0.775485          0.9625808       
+  Mean_Pos_Pred_Value  Mean_Neg_Pred_Value  Mean_Precision  Mean_Recall  Mean_Detection_Rate
+  0.781313             0.9629905            0.781313        0.775485     0.1107836          
+  Mean_Balanced_Accuracy
+  0.8690329             
+
+Confusion Matrix and Statistics
+
+          Reference
+Prediction  X1  X2  X3  X4  X5  X6  X7
+        X1 359 116   0   0   5   0  30
+        X2 123 329   6   0  30  22   2
+        X3   0  12 412  18   8  72   0
+        X4   0   0  29 503   0  18   0
+        X5  10  56   7   0 488  11   1
+        X6   3  16  86  19   9 417   0
+        X7  45  11   0   0   0   0 507
+
+Overall Statistics
+                                          
+               Accuracy : 0.7976          
+                 95% CI : (0.7845, 0.8103)
+    No Information Rate : 0.1429          
+    P-Value [Acc > NIR] : < 2.2e-16       
+                                          
+                  Kappa : 0.7639          
+                                          
+ Mcnemar's Test P-Value : NA              
+
+Statistics by Class:
+
+                     Class: X1 Class: X2 Class: X3 Class: X4 Class: X5 Class: X6 Class: X7
+Sensitivity            0.66481   0.60926    0.7630    0.9315    0.9037    0.7722    0.9389
+Specificity            0.95340   0.94352    0.9660    0.9855    0.9738    0.9590    0.9827
+Pos Pred Value         0.70392   0.64258    0.7893    0.9145    0.8517    0.7582    0.9005
+Neg Pred Value         0.94465   0.93543    0.9607    0.9885    0.9838    0.9619    0.9897
+Prevalence             0.14286   0.14286    0.1429    0.1429    0.1429    0.1429    0.1429
+Detection Rate         0.09497   0.08704    0.1090    0.1331    0.1291    0.1103    0.1341
+Detection Prevalence   0.13492   0.13545    0.1381    0.1455    0.1516    0.1455    0.1489
+Balanced Accuracy      0.80910   0.77639    0.8645    0.9585    0.9387    0.8656    0.9608
+Warning in preProcess.default(thresh = 0.95, k = 5, freqCut = 19, uniqueCut = 10,  :
+  These variables have zero variances: Soil_Type25
+Warning in preProcess.default(thresh = 0.95, k = 5, freqCut = 19, uniqueCut = 10,  :
+  These variables have zero variances: Soil_Type8
+Warning in preProcess.default(thresh = 0.95, k = 5, freqCut = 19, uniqueCut = 10,  :
+  These variables have zero variances: Soil_Type8
+Warning in preProcess.default(thresh = 0.95, k = 5, freqCut = 19, uniqueCut = 10,  :
+  These variables have zero variances: Soil_Type25
+Warning in preProcess.default(thresh = 0.95, k = 5, freqCut = 19, uniqueCut = 10,  :
+  These variables have zero variances: Soil_Type25
+Warning in preProcess.default(thresh = 0.95, k = 5, freqCut = 19, uniqueCut = 10,  :
+  These variables have zero variances: Soil_Type8
+Warning in preProcess.default(thresh = 0.95, k = 5, freqCut = 19, uniqueCut = 10,  :
+  These variables have zero variances: Soil_Type25
+Warning in preProcess.default(thresh = 0.95, k = 5, freqCut = 19, uniqueCut = 10,  :
+  These variables have zero variances: Soil_Type8
+Warning in preProcess.default(thresh = 0.95, k = 5, freqCut = 19, uniqueCut = 10,  :
+  These variables have zero variances: Soil_Type8
+Warning in preProcess.default(thresh = 0.95, k = 5, freqCut = 19, uniqueCut = 10,  :
+  These variables have zero variances: Soil_Type25
+Warning in preProcess.default(thresh = 0.95, k = 5, freqCut = 19, uniqueCut = 10,  :
+  These variables have zero variances: Soil_Type25
+Warning in preProcess.default(thresh = 0.95, k = 5, freqCut = 19, uniqueCut = 10,  :
+  These variables have zero variances: Soil_Type8
+Warning in preProcess.default(thresh = 0.95, k = 5, freqCut = 19, uniqueCut = 10,  :
+  These variables have zero variances: Soil_Type8
+Warning in preProcess.default(thresh = 0.95, k = 5, freqCut = 19, uniqueCut = 10,  :
+  These variables have zero variances: Soil_Type25
+Warning in preProcess.default(thresh = 0.95, k = 5, freqCut = 19, uniqueCut = 10,  :
+  These variables have zero variances: Soil_Type25
+Warning in preProcess.default(thresh = 0.95, k = 5, freqCut = 19, uniqueCut = 10,  :
+  These variables have zero variances: Soil_Type8
+Warning in preProcess.default(thresh = 0.95, k = 5, freqCut = 19, uniqueCut = 10,  :
+  These variables have zero variances: Soil_Type25
+Warning in preProcess.default(thresh = 0.95, k = 5, freqCut = 19, uniqueCut = 10,  :
+  These variables have zero variances: Soil_Type8
+Warning in preProcess.default(thresh = 0.95, k = 5, freqCut = 19, uniqueCut = 10,  :
+  These variables have zero variances: Soil_Type8
+Warning in preProcess.default(thresh = 0.95, k = 5, freqCut = 19, uniqueCut = 10,  :
+  These variables have zero variances: Soil_Type25
+There were 50 or more warnings (use warnings() to see the first 50)
+Partial Least Squares 
+
+11340 samples
+   52 predictor
+    7 classes: 'X1', 'X2', 'X3', 'X4', 'X5', 'X6', 'X7' 
+
+Pre-processing: centered (52), scaled (52) 
+Resampling: Cross-Validated (20 fold, repeated 10 times) 
+Summary of sample sizes: 10773, 10773, 10773, 10773, 10773, 10773, ... 
+Resampling results across tuning parameters:
+
+  ncomp  logLoss   AUC        prAUC      Accuracy   Kappa      Mean_F1    Mean_Sensitivity  Mean_Specificity
+  1      1.836819  0.7785584  0.3163890  0.2857143  0.1666667        NaN  0.2857143         0.8809524       
+  2      1.761938  0.8477435  0.4304308  0.4311993  0.3363992        NaN  0.4311993         0.9051999       
+  3      1.716474  0.8786029  0.5234044  0.5073104  0.4251955  0.4436346  0.5073104         0.9178851       
+  Mean_Pos_Pred_Value  Mean_Neg_Pred_Value  Mean_Precision  Mean_Recall  Mean_Detection_Rate
+        NaN            0.8979592                  NaN       0.2857143    0.04081633         
+        NaN            0.9142089                  NaN       0.4311993    0.06159990         
+  0.5170067            0.9226415            0.5170067       0.5073104    0.07247292         
+  Mean_Balanced_Accuracy
+  0.5833333             
+  0.6681996             
+  0.7125977             
+
+logLoss was used to select the optimal model using the smallest value.
+The final value used for the model was ncomp = 3.
+Confusion Matrix and Statistics
+
+          Reference
+Prediction  X1  X2  X3  X4  X5  X6  X7
+        X1  71  29   0   0   1   0  30
+        X2 333 389  10   0 299  16  39
+        X3   0   0  21  20   0  36   0
+        X4   1   6 172 503  34 143   0
+        X5   4  23  16   0 116  24   0
+        X6  15  58 319  17  81 321   0
+        X7 116  35   2   0   9   0 471
+
+Overall Statistics
+                                          
+               Accuracy : 0.5005          
+                 95% CI : (0.4845, 0.5166)
+    No Information Rate : 0.1429          
+    P-Value [Acc > NIR] : < 2.2e-16       
+                                          
+                  Kappa : 0.4173          
+                                          
+ Mcnemar's Test P-Value : NA              
+
+Statistics by Class:
+
+                     Class: X1 Class: X2 Class: X3 Class: X4 Class: X5 Class: X6 Class: X7
+Sensitivity            0.13148    0.7204  0.038889    0.9315   0.21481   0.59444    0.8722
+Specificity            0.98148    0.7849  0.982716    0.8901   0.97932   0.84877    0.9500
+Pos Pred Value         0.54198    0.3582  0.272727    0.5856   0.63388   0.39581    0.7441
+Neg Pred Value         0.87147    0.9439  0.859843    0.9873   0.88212   0.92624    0.9781
+Prevalence             0.14286    0.1429  0.142857    0.1429   0.14286   0.14286    0.1429
+Detection Rate         0.01878    0.1029  0.005556    0.1331   0.03069   0.08492    0.1246
+Detection Prevalence   0.03466    0.2873  0.020370    0.2272   0.04841   0.21455    0.1675
+Balanced Accuracy      0.55648    0.7526  0.510802    0.9108   0.59707   0.72160    0.9111
