@@ -132,6 +132,49 @@ data_del_lass <- dplyr::select(data,
                         "Soil_Type28",
                         "Soil_Type34"))
 
+#PCA and MCA
+library(factoextra)
+
+data_pca <- dplyr::select(data, 
+                          c(
+                            "Elevation",
+                            "Aspect",
+                            "Slope",
+                            "Horizontal_Distance_To_Hydrology",
+                            "Vertical_Distance_To_Hydrology",
+                            "Horizontal_Distance_To_Roadways",
+                            "Hillshade_9am",
+                            "Hillshade_Noon",
+                            "Hillshade_3pm",
+                            "Horizontal_Distance_To_Fire_Points"))
+
+data_pca <- prcomp(data_pca, scale=TRUE)
+summary(data_pca)
+
+data_pca <- data_pca[, 1:8] #95% explained variance
+
+library("FactoMineR")
+data_mca <- dplyr::select(data, 
+                          -c(
+                            "Elevation",
+                            "Aspect",
+                            "Slope",
+                            "Horizontal_Distance_To_Hydrology",
+                            "Vertical_Distance_To_Hydrology",
+                            "Horizontal_Distance_To_Roadways",
+                            "Hillshade_9am",
+                            "Hillshade_Noon",
+                            "Hillshade_3pm",
+                            "Horizontal_Distance_To_Fire_Points",
+                            "Cover_Type"))
+
+for(i in 1:ncol(data_mca)){
+  data_mca[,i] <- as.factor(data_mca[,i])
+}
+
+data_mca <- MCA(data_mca, graph=FALSE)
+data_mca$eig # no point in it 
+
 #MOdels
 library(caret)
 require(caTools)
