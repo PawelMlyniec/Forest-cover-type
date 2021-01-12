@@ -141,6 +141,7 @@ set.seed(101)
 
 #Data pre-porcessing V2
 X <- data[, -29]
+X <- data_del_lass
 X <- X[, -21]
 
 sample = sample.split(X$Cover_Type, SplitRatio = .75)
@@ -151,10 +152,10 @@ table(X_train$Cover_Type)
 table(X_val$Cover_Type)
 
 y_train = make.names(as.character(X_train$Cover_Type))
-X_train = X_train[, -53]
+X_train = X_train[, -ncol(X)]
 
 y_val = make.names(as.character(X_val$Cover_Type))
-X_val = X_val[, -53]
+X_val = X_val[, -ncol(X)]
 y_val = as.factor(y_val)
 
 # Enable parallel processing
@@ -163,11 +164,11 @@ cl <- makePSOCKcluster(7)
 registerDoParallel(cl)
 
 # Setup train control
-train_control <- trainControl(method="repeatedcv", number=10, repeats=3, classProbs= TRUE, summaryFunction = multiClassSummary)
+train_control <- trainControl(method="repeatedcv", number=10, repeats=10, classProbs= TRUE, summaryFunction = multiClassSummary)
 metric <- "logLoss"
 
 # Setup text file logging
-my_log = file("train_log_n10_r3_center_scale_v1.txt")
+my_log = file("train_log_n10_r10_center_scale_v1.txt")
 sink(my_log, append=TRUE, type="output")
 sink(my_log, append=TRUE, type="message")
 
