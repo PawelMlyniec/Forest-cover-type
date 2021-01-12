@@ -182,10 +182,14 @@ library(mlbench)
 set.seed(101) 
 #feature_variance <- caret::nearZeroVar(data, saveMetrics = TRUE)
 
-#Data pre-porcessing V2
+#Data pre-processing without lasso
 X <- data[, -29]
-X <- data_del_lass
 X <- X[, -21]
+
+# OR
+
+# Data preprocessing with lasso
+X <- data_del_lass
 
 sample = sample.split(X$Cover_Type, SplitRatio = .75)
 X_train = subset(X, sample == TRUE)
@@ -201,12 +205,13 @@ y_val = make.names(as.character(X_val$Cover_Type))
 X_val = X_val[, -ncol(X)]
 y_val = as.factor(y_val)
 
-# Enable parallel processing
+# Enable parallel processing for faster training
 library(doParallel)
 cl <- makePSOCKcluster(7)
 registerDoParallel(cl)
 
 # Setup train control
+# 10-fold cross validation with repeats
 train_control <- trainControl(method="repeatedcv", number=10, repeats=10, classProbs= TRUE, summaryFunction = multiClassSummary)
 metric <- "logLoss"
 
@@ -214,6 +219,8 @@ metric <- "logLoss"
 my_log = file("train_log_n10_r10_center_scale_v1.txt")
 sink(my_log, append=TRUE, type="output")
 sink(my_log, append=TRUE, type="message")
+
+# Model training and validation with time measurement 
 
 # Naive Bayes
 start_time = Sys.time()
@@ -274,8 +281,9 @@ print("Elapsed predict time:")
 print(end_time - start_time)
 confusionMatrix(data=pred_xgbtree, reference=y_val)
 
-# close file logger
-closeAllConnections()
+
 # stop parallel processing cluster
 stopCluster(cl)
+# close file logger
+closeAllConnections()
 
